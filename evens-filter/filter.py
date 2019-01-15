@@ -1,6 +1,6 @@
 import json
 
-def main(value):
+def user_defined_function(value):
     data = int(value) % 2
     ret = None
     if data == 0:
