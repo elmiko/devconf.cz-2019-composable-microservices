@@ -8,7 +8,7 @@ topic.
 oc new-app centos/python-36-centos7~https://github.com/elmiko/devconf.cz-2019-composable-microservices \
   --context-dir=number-generator \
   -e KAFKA_BROKERS=kafka:9092 \
-  -e KAFKA_TOPIC=bones-brigade \
+  -e KAFKA_TOPIC=numbers \
   --name=generator
 ```
 
