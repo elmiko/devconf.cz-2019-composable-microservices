@@ -20,7 +20,7 @@ def main(args):
     while True:
         line = str(random.randint(args.lower, args.upper))
         producer.send(args.topic, line.encode())
-        time.sleep(1.0 / args.rate)
+        time.sleep(1.0 / float(args.rate))
     logging.info('finished sending source')
 
 
