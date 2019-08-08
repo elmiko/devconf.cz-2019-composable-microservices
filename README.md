@@ -60,7 +60,7 @@ monitor the topic the output.
      -e KAFKA_BROKERS=kafka:9092 \
      -e KAFKA_IN_TOPIC=numbers \
      -e KAFKA_OUT_TOPIC=evens \
-     -p SPARK_OPTIONS='--packages=org.apache.spark:spark-sql-kafka-0-10_2.11:2.3.0' \
+     -p SPARK_OPTIONS='--packages=org.apache.spark:spark-sql-kafka-0-10_2.11:2.4.0' \
      -e USER_FUNCTION_URI='https://raw.githubusercontent.com/elmiko/devconf.cz-2019-composable-microservices/master/evens-filter/filter.py'
    ```
 1. Deploy listening service to monitor the output topic. This service will
