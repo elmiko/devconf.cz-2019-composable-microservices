@@ -56,7 +56,7 @@ monitor the topic the output.
    ```bash
    oc new-app --template=oshinko-python36-spark-build-dc \
      -p APPLICATION_NAME=evens-filter \
-     -p GIT_URI=https://github.com/bones-brigade/kafka-spark-openshift-python \
+     -p GIT_URI=https://gitlab.com/bones-brigade/kafka-spark-python.git \
      -e KAFKA_BROKERS=kafka:9092 \
      -e KAFKA_IN_TOPIC=numbers \
      -e KAFKA_OUT_TOPIC=evens \
@@ -67,7 +67,7 @@ monitor the topic the output.
    print messages from the specified topic to its logs. You can monitor the
    stream activity by following those logs.
    ```bash
-   oc new-app centos/python-36-centos7~https://github.com/bones-brigade/kafka-openshift-python-listener.git \
+   oc new-app centos/python-36-centos7~https://gitlab.com/bones-brigade/kafka-python-listener.git \
      -e KAFKA_BROKERS=kafka:9092 \
      -e KAFKA_TOPIC=evens \
      --name=listener
@@ -155,7 +155,7 @@ updates, and a service to monitor the output.
    print messages from the specified topic to its logs. You can monitor the
    stream activity by following those logs.
    ```bash
-   oc new-app centos/python-36-centos7~https://github.com/bones-brigade/kafka-openshift-python-listener.git \
+   oc new-app centos/python-36-centos7~https://gitlab.com/bones-brigade/kafka-python-listener.git \
      -e KAFKA_BROKERS=kafka:9092 \
      -e KAFKA_TOPIC=sentiments \
      --name=listener
